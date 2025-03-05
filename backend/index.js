@@ -184,5 +184,5 @@ app.get("/verify-roll/:rollId", async (req, res) => {
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on https://dice-game-test-aqcp.onrender.com`);
 });

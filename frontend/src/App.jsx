@@ -16,7 +16,9 @@ function App() {
   useEffect(() => {
     const fetchBalance = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/balance");
+        const response = await axios.get(
+          "https://dice-game-test-aqcp.onrender.com/balance"
+        );
         setBalance(response.data.balance);
       } catch (error) {
         console.error("Error fetching balance:", error);
@@ -42,15 +44,18 @@ function App() {
 
     try {
       const seedResponse = await axios.get(
-        "http://localhost:3001/get-server-seed-hash"
+        "https://dice-game-test-aqcp.onrender.com/get-server-seed-hash"
       );
       setServerSeedHash(seedResponse.data.server_seed_hash);
 
       const clientSeed = Math.random().toString(36).substring(2);
-      const rollResponse = await axios.post("http://localhost:3001/roll-dice", {
-        bet_amount: parseFloat(betAmount),
-        client_seed: clientSeed,
-      });
+      const rollResponse = await axios.post(
+        "https://dice-game-test-aqcp.onrender.com/roll-dice",
+        {
+          bet_amount: parseFloat(betAmount),
+          client_seed: clientSeed,
+        }
+      );
 
       const {
         roll,
