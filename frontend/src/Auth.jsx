@@ -154,7 +154,7 @@ const Auth = () => {
         </form>
         <p
           onClick={() => setIsSignup(!isSignup)}
-          className="mt-4 text-center text-blue-400 hover:underline cursor-pointer"
+          className="mt-4 text-center text-white hover:underline cursor-pointer"
         >
           {isSignup ? "Already have an account? Login" : "Don't have an account? Sign Up"}
         </p>
