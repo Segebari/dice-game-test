@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: dice-game-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: MONGODB_URI
+        fromDatabase:
+          name: dicegame-db
+          property: connectionString
+
+databases:
+  - name: dicegame-db
+    plan: free
