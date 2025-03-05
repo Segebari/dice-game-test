@@ -1,7 +1,6 @@
-
+### Dice Game
 
 ```markdown
-### Dice Game
 
 A modern dice-rolling game built to demonstrate full-stack development skills using React, Node.js, MongoDB, and Tailwind CSS. The app features a unique loading screen, a sleek interface, and a secure backend.
 
