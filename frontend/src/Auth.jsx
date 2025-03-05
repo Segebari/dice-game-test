@@ -110,20 +110,10 @@ const Auth = () => {
         />
       </div>
 
-      <img
-                src={loadScreen}
-                alt="Dice Game"
-                className="absolute w-40 top-5 sm:top-3 xl:top-5 "
-                style={{
-                  left: "50%",
-                  transform: "translateX(-50%)",
-                }}
-              />
-
       <div
         className={`transition-opacity duration-500 ${
           isLoading ? "opacity-0" : "opacity-100"
-        } bg-gray-900 p-8 rounded-lg shadow-lg w-full`}
+        } bg-gray-900 p-8 rounded-lg shadow-lg w-[85%] sm:w-[70%] lg:w-[40%]`}
       >
         <h2 className="text-2xl font-bold text-center mb-4">
           {isSignup ? "Sign Up" : "Login"}
