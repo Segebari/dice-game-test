@@ -3,7 +3,7 @@ const cors = require("cors");
 const crypto = require("crypto");
 const mongoose = require("mongoose");
 require("dotenv").config();
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 const app = express();

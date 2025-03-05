@@ -22,7 +22,7 @@ const Auth = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = isSignup ? "http://localhost:3001/signup" : "http://localhost:3001/login";
+      const url = isSignup ? "https://dice-game-test-aqcp.onrender.com/signup" : "https://dice-game-test-aqcp.onrender.com/login";
       const response = await axios.post(url, formData);
 
       if (isSignup) {
