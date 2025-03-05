@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.radial-gradient-background {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle, #3a1e3d, #1a0f1c);
+}
+
+.loader {
+  display: block;
+  position: relative;
+  height: 32px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 24px;
+  height: 24px;
+  animation: ballbns 2s ease-in infinite;
+}
+
+@keyframes ballbns {
+  0% {
+    left: 0;
+    transform: translateX(-100%) rotate(0deg);
+    border-radius: 0;
+    background: #fff;
+  }
+  100% {
+    left: 100%;
+    transform: translateX(0%) rotate(360deg);
+    border-radius: 50%;
+    background: #fff;
+  }
+}
