@@ -227,7 +227,7 @@ function App() {
           }}
         />
 
-        <div className="z-1 relative mt-46 sm:mt-20 bg-gray-900 p-8 rounded-xl shadow-2xl text-white border border-gray-800 w-full sm:w-xl  flex flex-col justify-center ">
+        <div className="z-1 relative mt-[-10rem]  sm:mt-20 bg-gray-900 p-8 rounded-xl shadow-2xl text-white border border-gray-800 w-full sm:w-xl  flex flex-col justify-center ">
           <p className="mb-4 text-lg bg-gradient-to-r from-purple-500 to-purple-700 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-purple-800 disabled:bg-gray-600 disabled:cursor-not-allowed transition-all duration-300 w-full p-2 text-center">
             Balance: <span>${balance}</span>
           </p>
