@@ -99,7 +99,7 @@ function Dice() {
   };
 
   return (
-    <div className="overflow-x-hidden min-h-screen min-w-screen radial-gradient-background relative flex items-center justify-center">
+    <div className="overflow-x-hidden min-h-[100vh] min-w-screen radial-gradient-background relative flex items-center justify-center">
       
         <div className="absolute inset-0  items-center justify-center hidden sm:flex">
           <img
@@ -174,7 +174,7 @@ function Dice() {
           }}
         />
 
-        <div className="z-1 relative mt-[-10rem]  sm:mt-20 bg-gray-900 p-8 rounded-xl shadow-2xl text-white border border-gray-800 w-full sm:w-xl  flex flex-col justify-center ">
+        <div className="z-1 absolute top-34 bg-gray-900 p-8 rounded-xl shadow-2xl text-white border border-gray-800 w-full sm:w-xl  flex flex-col justify-center">
           <p className="w-full p-3 text-2xl rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all duration-200">
             {" "}
             Hi {userName}

@@ -38,83 +38,93 @@ const Auth = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center radial-gradient-background text-white">
-       <div
-            className={`absolute inset-0 flex items-center justify-center transition-transform duration-1000 ease-in-out ${
-              isLoading ? "translate-y-0" : "-translate-y-full"
-            }`}
-          >
-            <img
-              src={diceBg}
-              alt="Dice Background"
-              className="absolute w-16 opacity-20 top-1/3 left-1/3 -translate-x-32 translate-y-12"
-            />
-            <img
-              src={diceBg}
-              alt="Dice Background"
-              className="absolute w-20 opacity-20 bottom-20 right-20"
-            />
-            <img
-              src={diceBg}
-              alt="Dice Background"
-              className="absolute w-24 opacity-20 top-1/4 right-1/4 translate-x-24 -translate-y-8"
-            />
-            <img
-              src={diceBg}
-              alt="Dice Background"
-              className="absolute w-16 opacity-20 bottom-1/4 left-1/4 -translate-x-20 translate-y-16"
-            />
-            <img
-              src={diceBg}
-              alt="Dice Background"
-              className="absolute w-18 opacity-20 top-10 left-72"
-            />
-            <img
-              src={diceBg}
-              alt="Dice Background"
-              className="absolute w-22 opacity-20 bottom-1/3 right-1/3 translate-x-28 translate-y-20"
-            />
-            <img
-              src={diceBg}
-              alt="Dice Background"
-              className="absolute w-14 opacity-20 top-1/2 left-1/2 translate-x-36 -translate-y-24"
-            />
-            <img
-              src={diceBg}
-              alt="Dice Background"
-              className="absolute w-20 opacity-20 bottom-40 right-64"
-            />
-            <img
-              src={diceBg}
-              alt="Dice Background"
-              className="absolute w-14 opacity-20 top-28 left-16"
-            />
-            <img
-              src={diceBg}
-              alt="Dice Background"
-              className="absolute w-18 opacity-20 bottom-1/2 left-1/2 -translate-x-40 translate-y-32"
-            />
-            <img
-              src={diceBg}
-              alt="Dice Background"
-              className="absolute w-16 opacity-20 top-16 right-12"
-            />
-            <img
-              src={diceBg}
-              alt="Dice Background"
-              className="absolute w-22 opacity-20 bottom-1/4 right-1/4 translate-x-32 translate-y-12"
-            />
-            <img
-              src={loadScreen}
-              alt="Loading Dice Game"
-              className="w-1/2 max-w-md z-10"
-            />
-          </div>
-      
-      
-          <div className={`transition-opacity duration-500 ${
-  isLoading ? "opacity-0" : "opacity-100"
-} bg-gray-900 p-8 rounded-lg shadow-lg w-[40%]`}>
+      <div
+        className={`absolute inset-0 flex items-center justify-center transition-transform duration-1000 ease-in-out ${
+          isLoading ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
+        <img
+          src={diceBg}
+          alt="Dice Background"
+          className="absolute w-16 opacity-20 top-1/3 left-1/3 -translate-x-32 translate-y-12"
+        />
+        <img
+          src={diceBg}
+          alt="Dice Background"
+          className="absolute w-20 opacity-20 bottom-20 right-20"
+        />
+        <img
+          src={diceBg}
+          alt="Dice Background"
+          className="absolute w-24 opacity-20 top-1/4 right-1/4 translate-x-24 -translate-y-8"
+        />
+        <img
+          src={diceBg}
+          alt="Dice Background"
+          className="absolute w-16 opacity-20 bottom-1/4 left-1/4 -translate-x-20 translate-y-16"
+        />
+        <img
+          src={diceBg}
+          alt="Dice Background"
+          className="absolute w-18 opacity-20 top-10 left-72"
+        />
+        <img
+          src={diceBg}
+          alt="Dice Background"
+          className="absolute w-22 opacity-20 bottom-1/3 right-1/3 translate-x-28 translate-y-20"
+        />
+        <img
+          src={diceBg}
+          alt="Dice Background"
+          className="absolute w-14 opacity-20 top-1/2 left-1/2 translate-x-36 -translate-y-24"
+        />
+        <img
+          src={diceBg}
+          alt="Dice Background"
+          className="absolute w-20 opacity-20 bottom-40 right-64"
+        />
+        <img
+          src={diceBg}
+          alt="Dice Background"
+          className="absolute w-14 opacity-20 top-28 left-16"
+        />
+        <img
+          src={diceBg}
+          alt="Dice Background"
+          className="absolute w-18 opacity-20 bottom-1/2 left-1/2 -translate-x-40 translate-y-32"
+        />
+        <img
+          src={diceBg}
+          alt="Dice Background"
+          className="absolute w-16 opacity-20 top-16 right-12"
+        />
+        <img
+          src={diceBg}
+          alt="Dice Background"
+          className="absolute w-22 opacity-20 bottom-1/4 right-1/4 translate-x-32 translate-y-12"
+        />
+        <img
+          src={loadScreen}
+          alt="Loading Dice Game"
+          className="w-1/2 max-w-md z-10"
+        />
+      </div>
 
+      <img
+                src={loadScreen}
+                alt="Dice Game"
+                className="absolute w-40 top-5 sm:top-3 xl:top-5 "
+                style={{
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                }}
+              />
+
+      <div
+        className={`transition-opacity duration-500 ${
+          isLoading ? "opacity-0" : "opacity-100"
+        } bg-gray-900 p-8 rounded-lg shadow-lg w-full`}
+      >
         <h2 className="text-2xl font-bold text-center mb-4">
           {isSignup ? "Sign Up" : "Login"}
         </h2>
@@ -156,7 +166,9 @@ const Auth = () => {
           onClick={() => setIsSignup(!isSignup)}
           className="mt-4 text-center text-white hover:underline cursor-pointer"
         >
-          {isSignup ? "Already have an account? Login" : "Don't have an account? Sign Up"}
+          {isSignup
+            ? "Already have an account? Login"
+            : "Don't have an account? Sign Up"}
         </p>
       </div>
     </div>
