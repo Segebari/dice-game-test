@@ -1,4 +1,4 @@
-#### Dice Game
+## Dice Game
 
 ```markdown
 
