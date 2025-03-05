@@ -1,11 +1,7 @@
-Based on our previous chats, I’ve pieced together what you’ve accomplished for your dice game assignment. You’ve built a Vite React frontend with Tailwind CSS, a Node.js/Express backend with MongoDB, hosted the frontend on Netlify and the backend on Render, created a unique loading screen and interface, and secured your MongoDB credentials after an initial `.env` exposure. You didn’t integrate Web3 but focused on showcasing your skills with MongoDB and modern web technologies. Below is a README for your GitHub repo and a short message to the company summarizing your approach.
 
----
-
-### README for GitHub
 
 ```markdown
-# Dice Game
+### Dice Game
 
 A modern dice-rolling game built to demonstrate full-stack development skills using React, Node.js, MongoDB, and Tailwind CSS. The app features a unique loading screen, a sleek interface, and a secure backend.
 
