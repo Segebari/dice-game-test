@@ -113,7 +113,7 @@ const Auth = () => {
       <div
         className={`transition-opacity duration-500 ${
           isLoading ? "opacity-0" : "opacity-100"
-        } bg-gray-900 p-8 rounded-lg shadow-lg w-[85%] sm:w-[70%] lg:w-[40%]`}
+        } bg-gray-900 p-8 rounded-lg shadow-lg w-[90%] sm:w-[70%] lg:w-[40%]`}
       >
         <h2 className="text-2xl font-bold text-center mb-4">
           {isSignup ? "Sign Up" : "Login"}
